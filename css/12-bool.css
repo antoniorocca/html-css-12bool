@@ -1,0 +1,88 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-bottom: 40px;
+}
+
+/* DEBUG */
+.container [class*="col-"] {
+  height: 200px;
+  background-color: pink;
+  border: 1px solid black;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*="col-"] {
+  float: left;
+  text-align: center;
+  line-height: 200px;
+}
+
+.col-1 {
+  width: calc((100% /12) *1);
+}
+
+.col-2 {
+  width: 100%;
+}
+
+.col-3 {
+  width: calc((100% /12) *8);
+}
+
+.col-4 {
+  width: calc((100% /12) *2);
+}
+
+.col-5 {
+  width: calc((100% /12) *6);
+}
+
+.col-5-nest {
+  width: calc((100% /12) *6);
+  padding: 4px;
+}
+
+.colo-1-nest {
+  width: 95px;
+  height: 189px;
+  border: 1px solid white;
+  border-right: 2px solid white;
+  float: left;
+  background-color: salmon;
+  line-height: 189px;
+}
+
+.colo-6-nest {
+  width: 385px;
+  height: 189px;
+  border: 1px solid white;
+  border-right: 2px solid white;
+  float: left;
+  background-color: salmon;
+  line-height: 189px;
+}
+
+.colo-8-nest {
+  width: 287px;
+  height: 189px;
+  border: 1px solid white;
+  border-right: 2px solid white;
+  float: left;
+  background-color: salmon;
+  line-height: 189px;
+}
